@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bbbbbbb SVG</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .mySvg svg{
+            width:100vw;
+            height:600px;
+        }
+        /* #sanglasses{
+            display: none;
+        } */
+    </style>
+</head>
+<body>
+    <section class="mySvg">
+        <svg xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         viewBox="0 -50 100 150" >
+            <circle id="hair" fill="#fbf233" stroke="#333" stroke-width="0.5" cx="50" cy="25" r="55"/>
+            <path id="ears" stroke="#000" stroke-width="0.3" fill="#dba664" d="
+                M 30,50
+                C 30,45 27,45 25,45
+                S 20,47 18,50
+                S 18,54 20,60
+                S 25,67 25,67
+                S 30,70 30,62
+                Z
+                M 70,50
+                C 70,45 73,45 75,45
+                S 80,47 82,50
+                S 82,54 80,60
+                S 75,67 75,67
+                S 70,70 70,62
+                Z
+            "></path>
+            <path id="faceSkin" stroke="#000" stroke-width="0.3" fill="#dba664" d="
+                M 30,25
+                L 70,25
+                L 75,75
+                L 60,100
+                L 40,100
+                L 25,75
+                Z
+            "></path>
+            <path id="beards" stroke="#000" stroke-width="0.2" fill="none" d="    
+                M 33,88.5
+                l 1,-4
+                M 32,87
+                l 1,-4
+                M 40,100
+                l 1,-4
+                M 39,98.5
+                l 1,-4
+                M 60,100
+                l -1,-4
+                M 61,98.5
+                l -1,-4
+                M 68,87
+                l -1,-4
+                M 67,88.5
+                l -1,-4
+            "></path>
+            <path id="lipsFill" stroke="#000" stroke-width="0.3" fill="#9e6026" d="    
+                M 40,80
+                L 47.5,75
+                L 52.5,75
+                L 60,80
+                L 52.5,78
+                L 50,79
+                L 47.5,78
+                Z
+            "></path>
+            <path id="lipsStrokes" stroke="#000" stroke-width="0.3" fill="none" d="    
+                M 45,76.5
+                v 2
+                M 47.5,75
+                v 3
+                M 50,75
+                v 4
+                M 52.5,75
+                v 3
+                M 55,76.5
+                v 0,2
+
+                M 43,83
+                l 2,1.5
+                l 10,0
+                l 2,-1.5
+            "></path>
+            <path id="nose" stroke="#000" stroke-width="0.3" fill="none" d="    
+                M 47.5,50
+                v 15
+                c 0,-1 -2,-1 -2.5,-1
+                s -3,2 -3,5
+                s 3.5,2 4,3
+                s 4,1 4,1
+
+                M 52.5,50
+                v 15
+                c 0,-1 2,-1 2.5,-1
+                s 3,2 3,5
+                s -3.5,2 -4,3
+                s -4,1 -4,1
+            "></path>
+            <path id="eyes" stroke="#000" stroke-width="0.3" fill="none" d="    
+                M 45,48
+                c 0,0 0,-2 -2.5,-2.5
+                s -2,1 -2.5,2.5
+                s 2.5,2.5 2.5,2.5
+                s -2,0 -2.5,2.5
+                s 2.5,2.5 2.5,2.5
+                s 2.5,0 2.5,-2.5
+                M 60,48
+                c 0,0 0,-2 -2.5,-2.5
+                s -2,1 -2.5,2.5
+                s 2.5,2.5 2.5,2.5
+                s -2,0 -2.5,2.5
+                s 2.5,2.5 2.5,2.5
+                s 2.5,0 2.5,-2.5
+            "></path>
+            <g id="sanglasses">
+                <path id="sanglassesFrame" stroke="#000" stroke-width="0.3" fill="#fff" d="    
+                    M 47.5,50
+                    l -2.5,8
+                    l -19,-8
+                    l 0.6,-8
+                    l 21,4
+                    l 0,1
+                    l 5,0
+                    l 0,-1
+                    l 21,-4
+                    l 0.6,8
+                    l -19,8
+                    l -2.5,-8
+                    z
+                "></path>
+                <path id="sanglassesGlasses" stroke="#000" stroke-width="0.3" fill="#001354" d="
+                    M 28,44
+                    l 18.5,4
+                    l -2.5,7.5
+                    l -16.5,-6.5
+                    z
+                    M 72,44
+                    l -18.5,4
+                    l 2.5,7.5
+                    l 16.5,-6.5
+                    z
+                "></path>
+                <path id="sanglassesGlassesRefrectionsFills" stroke="#000" stroke-width="0.3" fill="#fff" d="    
+                    M 40,46.5
+                    l -2,6.5
+                    l -5,-2
+                    l 1.5,-5.5
+                    z
+                    M 60,46.5
+                    l 2,6.5
+                    l 5,-2
+                    l -1.5,-5.5
+                    z
+                "></path>
+                <path id="sanglassesGlassesRefrectionsStrokes" stroke="#000" stroke-width="0.3" fill="none" d="    
+                    M 37.2,46
+                    l -1.7,6
+                    M 62.8,46
+                    l 1.7,6
+                "></path>
+            </g>
+            <path id="eyebrows" stroke="#000" stroke-width="0.3" fill="none" d="    
+                M 47.5,42.5
+                c 0,-5 -5,-15 -10,-15
+                s -7.5,5 -7.5,10
+
+                M 52.5,42.5
+                c 0,-5 5,-15 10,-15
+                s 7.5,5 7.5,10
+            "></path>
+            <!-- <path d="M 0,0 l 100,0" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 0,5 l 100,0" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 0,10 l 100,0" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 0,15 l 100,0" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 0,20 l 100,0" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 0,25 l 100,0" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 0,30 l 100,0" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 0,35 l 100,0" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 0,40 l 100,0" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 0,45 l 100,0" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 0,50 l 100,0" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 0,55 l 100,0" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 0,60 l 100,0" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 0,65 l 100,0" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 0,70 l 100,0" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 0,75 l 100,0" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 0,80 l 100,0" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 0,85 l 100,0" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 0,90 l 100,0" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 0,95 l 100,0" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 0,100 l 100,0" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 0,0 l 0,100" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 5,0 l 0,100" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 10,0 l 0,100" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 15,0 l 0,100" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 20,0 l 0,100" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 25,0 l 0,100" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 30,0 l 0,100" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 35,0 l 0,100" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 40,0 l 0,100" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 45,0 l 0,100" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 50,0 l 0,100" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 55,0 l 0,100" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 60,0 l 0,100" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 65,0 l 0,100" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 70,0 l 0,100" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 75,0 l 0,100" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 80,0 l 0,100" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 85,0 l 0,100" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 90,0 l 0,100" stroke="#333" stroke-width="0.5" class="grid"></path>
+            <path d="M 95,0 l 0,100" stroke="#333" stroke-width="0.1" class="grid"></path>
+            <path d="M 100,0 l 0,100" stroke="#333" stroke-width="0.5" class="grid"></path> -->
+        </svg>
+    </section>
+</body>
+</html>
