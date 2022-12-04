@@ -14,13 +14,47 @@
             width:100vw;
             height:600px;
         }
+        .variableVelocity{
+            padding-top: 1rem;
+            text-align: center;
+        }
+        .variableVelocity label{
+            font-size: 1rem;
+        }
         /* #sanglasses{
             display: none;
         } */
     </style>
+
 </head>
+<script>
+
+    window.onload = function () {
+        const animeRightNoseHair = document.getElementById("animeRightNoseHair");
+        const animeLeftNoseHair = document.getElementById("animeLeftNoseHair");
+        const inputVelocity = document.getElementById("velocity");
+        
+        let inputVelocityValue = function() {
+            let value = inputVelocity.value;
+            let target = inputVelocity;
+            target.innerHTML = value;
+            let newValue = -value + 1.01;
+            animeRightNoseHair.setAttribute("dur", newValue+'s');
+            animeLeftNoseHair.setAttribute("dur", newValue+'s');
+        }
+
+        inputVelocity.addEventListener("input", inputVelocityValue);
+        
+    }
+  
+  </script>
 <body>
     <main class="mySvg">
+        <div class="variableVelocity">
+            <input type="range" id="velocity" name="velocity"
+                    min="0" max="1" value="0.5" step="0.01">
+            <label for="velocity">Velocity</label>
+        </div>
         <svg xmlns="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink"
          viewBox="0 -50 100 200" >
@@ -102,6 +136,7 @@
                 attributeName="d" 
                 dur="0.5s" 
                 repeatCount="indefinite" 
+                id="animeLeftNoseHair"
                 values="
                     M 0,10 C 10,3 10,3 20,10 S 30,17 40,10 S 50,3 60,10 S 70,17 80,10 S 90,3 100,10;
                     M 0,10 C 10,15 15,4.8 20,4.8 S 35,15.3 40,15.3S 55,4.8 60,4.8 S 75,15.3 80,15.3 S 95,4.8 100,4.8;
@@ -117,6 +152,7 @@
                 attributeName="d" 
                 dur="0.5s" 
                 repeatCount="indefinite" 
+                id="animeRightNoseHair"
                 values="
                     M 0,10 C 10,3 10,3 20,10 S 30,17 40,10 S 50,3 60,10 S 70,17 80,10 S 90,3 100,10;
                     M 0,10 C 10,15 15,4.8 20,4.8 S 35,15.3 40,15.3S 55,4.8 60,4.8 S 75,15.3 80,15.3 S 95,4.8 100,4.8;
