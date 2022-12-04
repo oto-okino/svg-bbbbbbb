@@ -34,7 +34,7 @@
         const animeLeftNoseHair = document.getElementById("animeLeftNoseHair");
         const inputVelocity = document.getElementById("velocity");
         
-        let inputVelocityValue = function() {
+        let changeVelocityValue = function() {
             let value = inputVelocity.value;
             let target = inputVelocity;
             target.innerHTML = value;
@@ -43,7 +43,7 @@
             animeLeftNoseHair.setAttribute("dur", newValue+'s');
         }
 
-        inputVelocity.addEventListener("input", inputVelocityValue);
+        inputVelocity.addEventListener("input", changeVelocityValue);
         
     }
   
