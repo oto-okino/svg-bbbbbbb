@@ -25,29 +25,29 @@
             display: none;
         } */
     </style>
-
-</head>
-<script>
-
-    window.onload = function () {
-        const animeRightNoseHair = document.getElementById("animeRightNoseHair");
-        const animeLeftNoseHair = document.getElementById("animeLeftNoseHair");
-        const inputVelocity = document.getElementById("velocity");
+    <script>
+    
+        window.onload = function () {
+            
+            const animeRightNoseHair = document.getElementById("animeRightNoseHair");
+            const animeLeftNoseHair = document.getElementById("animeLeftNoseHair");
+            const inputVelocity = document.getElementById("velocity");
         
-        let changeVelocityValue = function() {
-            let value = inputVelocity.value;
-            let target = inputVelocity;
-            target.innerHTML = value;
-            let newValue = -value + 1.01;
-            animeRightNoseHair.setAttribute("dur", newValue+'s');
-            animeLeftNoseHair.setAttribute("dur", newValue+'s');
+            let changeVelocityValue = function() {
+                let value = inputVelocity.value;
+                let target = inputVelocity;
+                target.innerHTML = value;
+                let newValue = -value + 1.01;
+                animeRightNoseHair.setAttribute("dur", newValue+'s');
+                animeLeftNoseHair.setAttribute("dur", newValue+'s');
+            }
+
+            inputVelocity.addEventListener("input", changeVelocityValue);
+        
         }
-
-        inputVelocity.addEventListener("input", changeVelocityValue);
-        
-    }
   
   </script>
+</head>
 <body>
     <main class="mySvg">
         <div class="variableVelocity">
